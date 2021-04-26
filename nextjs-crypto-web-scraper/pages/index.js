@@ -4,7 +4,7 @@ import SearchBar from '../components/SearchBar'
 import Layout from '../components/Layout'
 
 
-export default function Home({filteredCoins}) {
+export default function Home({ filteredCoins }) {
 const [search, setSearch] = useState('')
 
 const allCoins = filteredCoins.filter(coin => 

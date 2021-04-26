@@ -10,7 +10,7 @@
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="header">
-         <Link href="/">
+         <Link href="/" passHref>
           <a>
           <svg
               width='675'

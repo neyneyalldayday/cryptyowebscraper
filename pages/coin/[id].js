@@ -25,7 +25,7 @@ const Coin = ({ coin }) => {
 export default Coin;
 
 export async function getServerSideProps(context) {
-  const {id} = context.query;
+  const { id } = context.query;
 
   const res = await fetch(`https://api.coingecko.com/api/v3/coins/${id}
   `);

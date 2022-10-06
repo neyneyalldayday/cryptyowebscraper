@@ -12,7 +12,7 @@ const Coins = ({
   id
 }) => {
   return (
-    <Link href='/coin/[id]' as={`/coin/${id}`}>
+    <Link  href='/coin/[id].js' as={`/coin/${id}`}>
       <a>
         <div className={styles.coin_container}>
           <div className={styles.coin_row}>

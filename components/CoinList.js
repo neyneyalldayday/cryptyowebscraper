@@ -1,10 +1,11 @@
 import Coins from "./Coins";
 
+
 export default function CoinList({filteredCoins}) {
     return ( 
     <>
     {filteredCoins.map(coin => {
-        return (
+        return (       
             <Coins
             key={coin.id}
             name={coin.name}
@@ -15,7 +16,7 @@ export default function CoinList({filteredCoins}) {
             volume={coin.total_volume}
             image={coin.image}
             priceChange={coin.price_change_percentage_24h}
-            />
+            />           
         )
     })}
     </>

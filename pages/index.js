@@ -2,6 +2,7 @@ import { useState } from 'react';
 import CoinList from '../components/CoinList';
 import SearchBar from '../components/SearchBar';
 import Layout from '../components/Layout';
+import Coin from './coin/[id]';
 
 export default function Home({ filteredCoins }) {
   const [search, setSearch] = useState('');
@@ -21,7 +22,7 @@ export default function Home({ filteredCoins }) {
       <div className='coin_app'>
         <SearchBar type='text' placeholder='Search' onChange={handleChange} />
         <CoinList filteredCoins={allCoins} />
-      </div>
+      </div>      
     </Layout>
   );
 }
